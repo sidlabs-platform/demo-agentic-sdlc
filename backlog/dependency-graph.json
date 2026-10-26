@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "generated_by": "3-epic-and-tasks-agent",
+    "total_tasks": 31,
+    "backend_tasks": 24,
+    "frontend_tasks": 7,
+    "wave_count": 8,
+    "wave_task_counts": {
+      "0": 1,
+      "1": 4,
+      "2": 6,
+      "3": 7,
+      "4": 7,
+      "5": 4,
+      "6": 1,
+      "7": 1
+    }
+  },
+  "tasks": {
+    "TASK-001": {
+      "title": "Add Application Settings and FastAPI Foundation",
+      "type": "backend",
+      "dependencies": [],
+      "depends_on": [],
+      "story": "STORY-001",
+      "epic": "EPIC-001",
+      "wave": 0
+    },
+    "TASK-002": {
+      "title": "Implement SQLite Connection and Complete Schema",
+      "type": "backend",
+      "dependencies": ["TASK-001"],
+      "depends_on": ["TASK-001"],
+      "story": "STORY-001",
+      "epic": "EPIC-001",
+      "wave": 1
+    },
+    "TASK-003": {
+      "title": "Seed the Three Starter Courses",
+      "type": "backend",
+      "dependencies": ["TASK-002"],
+      "depends_on": ["TASK-002"],
+      "story": "STORY-001",
+      "epic": "EPIC-001",
+      "wave": 2
+    },
+    "TASK-004": {
+      "title": "Initialize Persistence During Application Lifespan",
+      "type": "backend",
+      "dependencies": ["TASK-001", "TASK-002", "TASK-003"],
+      "depends_on": ["TASK-001", "TASK-002", "TASK-003"],
+      "story": "STORY-001",
+      "epic": "EPIC-001",
+      "wave": 3
+    },
+    "TASK-005": {
+      "title": "Define Auth Schemas and Security Utilities",
+      "type": "backend",
+      "dependencies": ["TASK-001"],
+      "depends_on": ["TASK-001"],
+      "story": "STORY-002",
+      "epic": "EPIC-002",
+      "wave": 1
+    },
+    "TASK-006": {
+      "title": "Implement Registration and Login APIs",
+      "type": "backend",
+      "dependencies": ["TASK-002", "TASK-005"],
+      "depends_on": ["TASK-002", "TASK-005"],
+      "story": "STORY-002",
+      "epic": "EPIC-002",
+      "wave": 2
+    },
+    "TASK-007": {
+      "title": "Implement Current-User and Role Dependencies",
+      "type": "backend",
+      "dependencies": ["TASK-002", "TASK-005"],
+      "depends_on": ["TASK-002", "TASK-005"],
+      "story": "STORY-003",
+      "epic": "EPIC-002",
+      "wave": 2
+    },
+    "TASK-008": {
+      "title": "Implement Course Schemas and Lifecycle Services",
+      "type": "backend",
+      "dependencies": ["TASK-002"],
+      "depends_on": ["TASK-002"],
+      "story": "STORY-004",
+      "epic": "EPIC-003",
+      "wave": 2
+    },
+    "TASK-009": {
+      "title": "Expose Course Lifecycle and Discovery Routes",
+      "type": "backend",
+      "dependencies": ["TASK-007", "TASK-008"],
+      "depends_on": ["TASK-007", "TASK-008"],
+      "story": "STORY-004",
+      "epic": "EPIC-003",
+      "wave": 3
+    },
+    "TASK-010": {
+      "title": "Implement Module and Lesson Services",
+      "type": "backend",
+      "dependencies": ["TASK-002", "TASK-008"],
+      "depends_on": ["TASK-002", "TASK-008"],
+      "story": "STORY-005",
+      "epic": "EPIC-003",
+      "wave": 3
+    },
+    "TASK-011": {
+      "title": "Expose Admin Module and Lesson CRUD Routes",
+      "type": "backend",
+      "dependencies": ["TASK-007", "TASK-010"],
+      "depends_on": ["TASK-007", "TASK-010"],
+      "story": "STORY-005",
+      "epic": "EPIC-003",
+      "wave": 4
+    },
+    "TASK-012": {
+      "title": "Implement Markdown Rendering and XSS Sanitization",
+      "type": "backend",
+      "dependencies": ["TASK-001"],
+      "depends_on": ["TASK-001"],
+      "story": "STORY-005",
+      "epic": "EPIC-003",
+      "wave": 1
+    },
+    "TASK-013": {
+      "title": "Expose Sanitized Lesson Retrieval",
+      "type": "backend",
+      "dependencies": ["TASK-007", "TASK-010", "TASK-012"],
+      "depends_on": ["TASK-007", "TASK-010", "TASK-012"],
+      "story": "STORY-005",
+      "epic": "EPIC-003",
+      "wave": 4
+    },
+    "TASK-014": {
+      "title": "Implement Quiz Authoring and Attempt APIs",
+      "type": "backend",
+      "dependencies": ["TASK-002", "TASK-007", "TASK-010"],
+      "depends_on": ["TASK-002", "TASK-007", "TASK-010"],
+      "story": "STORY-006",
+      "epic": "EPIC-003",
+      "wave": 4
+    },
+    "TASK-015": {
+      "title": "Build Pluggable GitHub Models Client and Prompts",
+      "type": "backend",
+      "dependencies": ["TASK-001"],
+      "depends_on": ["TASK-001"],
+      "story": "STORY-007",
+      "epic": "EPIC-004",
+      "wave": 1
+    },
+    "TASK-016": {
+      "title": "Implement AI Request and Artifact Governance Service",
+      "type": "backend",
+      "dependencies": ["TASK-002", "TASK-015"],
+      "depends_on": ["TASK-002", "TASK-015"],
+      "story": "STORY-007",
+      "epic": "EPIC-004",
+      "wave": 2
+    },
+    "TASK-017": {
+      "title": "Expose Admin AI Generation and Artifact Routes",
+      "type": "backend",
+      "dependencies": ["TASK-007", "TASK-016"],
+      "depends_on": ["TASK-007", "TASK-016"],
+      "story": "STORY-007",
+      "epic": "EPIC-004",
+      "wave": 3
+    },
+    "TASK-018": {
+      "title": "Implement Learner Enrollment Service",
+      "type": "backend",
+      "dependencies": ["TASK-002", "TASK-007", "TASK-008"],
+      "depends_on": ["TASK-002", "TASK-007", "TASK-008"],
+      "story": "STORY-008",
+      "epic": "EPIC-005",
+      "wave": 3
+    },
+    "TASK-019": {
+      "title": "Expose Learner Enrollment Route",
+      "type": "backend",
+      "dependencies": ["TASK-007", "TASK-018"],
+      "depends_on": ["TASK-007", "TASK-018"],
+      "story": "STORY-008",
+      "epic": "EPIC-005",
+      "wave": 4
+    },
+    "TASK-020": {
+      "title": "Implement Transactional Lesson Progress Updates",
+      "type": "backend",
+      "dependencies": ["TASK-002", "TASK-007", "TASK-010", "TASK-018"],
+      "depends_on": ["TASK-002", "TASK-007", "TASK-010", "TASK-018"],
+      "story": "STORY-009",
+      "epic": "EPIC-005",
+      "wave": 4
+    },
+    "TASK-021": {
+      "title": "Implement Learner Enrollment and Progress Dashboard API",
+      "type": "backend",
+      "dependencies": ["TASK-007", "TASK-018", "TASK-020"],
+      "depends_on": ["TASK-007", "TASK-018", "TASK-020"],
+      "story": "STORY-009",
+      "epic": "EPIC-005",
+      "wave": 5
+    },
+    "TASK-022": {
+      "title": "Implement Reporting Models and Read-Only Service",
+      "type": "backend",
+      "dependencies": ["TASK-002"],
+      "depends_on": ["TASK-002"],
+      "story": "STORY-010",
+      "epic": "EPIC-006",
+      "wave": 2
+    },
+    "TASK-023": {
+      "title": "Expose Admin Reporting Endpoints",
+      "type": "backend",
+      "dependencies": ["TASK-007", "TASK-022"],
+      "depends_on": ["TASK-007", "TASK-022"],
+      "story": "STORY-010",
+      "epic": "EPIC-006",
+      "wave": 3
+    },
+    "TASK-024": {
+      "title": "Build Shared Layout and Public Auth Pages",
+      "type": "frontend",
+      "dependencies": ["TASK-006"],
+      "depends_on": ["TASK-006"],
+      "story": "STORY-011",
+      "epic": "EPIC-007",
+      "wave": 3
+    },
+    "TASK-025": {
+      "title": "Build Course Catalog and Detail Pages",
+      "type": "frontend",
+      "dependencies": ["TASK-009", "TASK-019", "TASK-024"],
+      "depends_on": ["TASK-009", "TASK-019", "TASK-024"],
+      "story": "STORY-012",
+      "epic": "EPIC-007",
+      "wave": 5
+    },
+    "TASK-026": {
+      "title": "Build Lesson Viewer and Quiz Interactions",
+      "type": "frontend",
+      "dependencies": ["TASK-013", "TASK-014", "TASK-020", "TASK-024"],
+      "depends_on": ["TASK-013", "TASK-014", "TASK-020", "TASK-024"],
+      "story": "STORY-013",
+      "epic": "EPIC-007",
+      "wave": 5
+    },
+    "TASK-027": {
+      "title": "Build Learner Dashboard and Progress UI",
+      "type": "frontend",
+      "dependencies": ["TASK-021", "TASK-024"],
+      "depends_on": ["TASK-021", "TASK-024"],
+      "story": "STORY-014",
+      "epic": "EPIC-007",
+      "wave": 6
+    },
+    "TASK-028": {
+      "title": "Build Admin Course and Content Management UI",
+      "type": "frontend",
+      "dependencies": ["TASK-009", "TASK-011", "TASK-013", "TASK-014", "TASK-024"],
+      "depends_on": ["TASK-009", "TASK-011", "TASK-013", "TASK-014", "TASK-024"],
+      "story": "STORY-015",
+      "epic": "EPIC-007",
+      "wave": 5
+    },
+    "TASK-029": {
+      "title": "Build AI Generation and Artifact Review UI",
+      "type": "frontend",
+      "dependencies": ["TASK-017", "TASK-024"],
+      "depends_on": ["TASK-017", "TASK-024"],
+      "story": "STORY-016",
+      "epic": "EPIC-007",
+      "wave": 4
+    },
+    "TASK-030": {
+      "title": "Build Admin Reports Dashboard UI",
+      "type": "frontend",
+      "dependencies": ["TASK-023", "TASK-024"],
+      "depends_on": ["TASK-023", "TASK-024"],
+      "story": "STORY-017",
+      "epic": "EPIC-007",
+      "wave": 4
+    },
+    "TASK-031": {
+      "title": "Wire Feature APIs and Frontend Page Routes",
+      "type": "backend",
+      "dependencies": [
+        "TASK-001",
+        "TASK-004",
+        "TASK-006",
+        "TASK-009",
+        "TASK-011",
+        "TASK-013",
+        "TASK-014",
+        "TASK-017",
+        "TASK-019",
+        "TASK-020",
+        "TASK-021",
+        "TASK-023",
+        "TASK-024",
+        "TASK-025",
+        "TASK-026",
+        "TASK-027",
+        "TASK-028",
+        "TASK-029",
+        "TASK-030"
+      ],
+      "depends_on": [
+        "TASK-001",
+        "TASK-004",
+        "TASK-006",
+        "TASK-009",
+        "TASK-011",
+        "TASK-013",
+        "TASK-014",
+        "TASK-017",
+        "TASK-019",
+        "TASK-020",
+        "TASK-021",
+        "TASK-023",
+        "TASK-024",
+        "TASK-025",
+        "TASK-026",
+        "TASK-027",
+        "TASK-028",
+        "TASK-029",
+        "TASK-030"
+      ],
+      "story": "STORY-001",
+      "epic": "EPIC-001",
+      "wave": 7
+    }
+  },
+  "waves": {
+    "0": {
+      "description": "Foundation — environment settings and FastAPI application shell",
+      "tasks": ["TASK-001"]
+    },
+    "1": {
+      "description": "Core infrastructure — database schema, authentication utilities, sanitizer, AI client",
+      "tasks": ["TASK-002", "TASK-005", "TASK-012", "TASK-015"]
+    },
+    "2": {
+      "description": "Persistence and service foundations — seed data, auth APIs, course services, AI and reporting services",
+      "tasks": ["TASK-003", "TASK-006", "TASK-007", "TASK-008", "TASK-016", "TASK-022"]
+    },
+    "3": {
+      "description": "Service APIs and public shell — lifecycle, enrollment, AI/report routes, startup",
+      "tasks": ["TASK-004", "TASK-009", "TASK-010", "TASK-017", "TASK-018", "TASK-023", "TASK-024"]
+    },
+    "4": {
+      "description": "Feature endpoints and first Admin UI — content, quiz, progress, AI and reports",
+      "tasks": ["TASK-011", "TASK-013", "TASK-014", "TASK-019", "TASK-020", "TASK-029", "TASK-030"]
+    },
+    "5": {
+      "description": "Learner progress API and learner/authoring pages — catalog, lesson, Admin course management",
+      "tasks": ["TASK-021", "TASK-025", "TASK-026", "TASK-028"]
+    },
+    "6": {
+      "description": "Learner dashboard experience",
+      "tasks": ["TASK-027"]
+    },
+    "7": {
+      "description": "Final application route assembly and integration checks",
+      "tasks": ["TASK-031"]
+    }
+  }
+}

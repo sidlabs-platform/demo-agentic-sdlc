@@ -7,6 +7,7 @@
 | **Status** | To Do |
 | **Assignee** | Unassigned |
 | **Estimate** | 9h |
+| **Wave**     | 5                 |
 | **Type / Agent** | Frontend — `@5-ui-develop-agent` |
 
 ## Description

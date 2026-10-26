@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "total_waves": 8,
+    "total_tasks": 31,
+    "backend_tasks": 24,
+    "frontend_tasks": 7,
+    "created_by": "sdlc-build-planner-workflow",
+    "created_at": "2026-10-26T12:49:44Z",
+    "pipeline_tracker": "#1",
+    "triggering_issue": "#7",
+    "source_graph": "backlog/dependency-graph.json"
+  },
+  "waves": {
+    "0": {
+      "status": "pending",
+      "theme": "Foundation",
+      "branch": "wave-0/foundation",
+      "tasks": [
+        "TASK-001"
+      ],
+      "backend_tasks": [
+        "TASK-001"
+      ],
+      "frontend_tasks": [],
+      "depends_on_waves": [],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    },
+    "1": {
+      "status": "pending",
+      "theme": "Core infrastructure",
+      "branch": "wave-1/core-infrastructure",
+      "tasks": [
+        "TASK-002",
+        "TASK-005",
+        "TASK-012",
+        "TASK-015"
+      ],
+      "backend_tasks": [
+        "TASK-002",
+        "TASK-005",
+        "TASK-012",
+        "TASK-015"
+      ],
+      "frontend_tasks": [],
+      "depends_on_waves": [
+        0
+      ],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    },
+    "2": {
+      "status": "pending",
+      "theme": "Persistence and service foundations",
+      "branch": "wave-2/persistence-and-service-foundations",
+      "tasks": [
+        "TASK-003",
+        "TASK-006",
+        "TASK-007",
+        "TASK-008",
+        "TASK-016",
+        "TASK-022"
+      ],
+      "backend_tasks": [
+        "TASK-003",
+        "TASK-006",
+        "TASK-007",
+        "TASK-008",
+        "TASK-016",
+        "TASK-022"
+      ],
+      "frontend_tasks": [],
+      "depends_on_waves": [
+        0,
+        1
+      ],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    },
+    "3": {
+      "status": "pending",
+      "theme": "Service APIs and public shell",
+      "branch": "wave-3/service-apis-and-public-shell",
+      "tasks": [
+        "TASK-004",
+        "TASK-009",
+        "TASK-010",
+        "TASK-017",
+        "TASK-018",
+        "TASK-023",
+        "TASK-024"
+      ],
+      "backend_tasks": [
+        "TASK-004",
+        "TASK-009",
+        "TASK-010",
+        "TASK-017",
+        "TASK-018",
+        "TASK-023"
+      ],
+      "frontend_tasks": [
+        "TASK-024"
+      ],
+      "depends_on_waves": [
+        0,
+        1,
+        2
+      ],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    },
+    "4": {
+      "status": "pending",
+      "theme": "Feature endpoints and first Admin UI",
+      "branch": "wave-4/feature-endpoints-and-first-admin-ui",
+      "tasks": [
+        "TASK-011",
+        "TASK-013",
+        "TASK-014",
+        "TASK-019",
+        "TASK-020",
+        "TASK-029",
+        "TASK-030"
+      ],
+      "backend_tasks": [
+        "TASK-011",
+        "TASK-013",
+        "TASK-014",
+        "TASK-019",
+        "TASK-020"
+      ],
+      "frontend_tasks": [
+        "TASK-029",
+        "TASK-030"
+      ],
+      "depends_on_waves": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    },
+    "5": {
+      "status": "pending",
+      "theme": "Learner progress API and learner/authoring pages",
+      "branch": "wave-5/learner-progress-api-and-learner-authoring-pages",
+      "tasks": [
+        "TASK-021",
+        "TASK-025",
+        "TASK-026",
+        "TASK-028"
+      ],
+      "backend_tasks": [
+        "TASK-021"
+      ],
+      "frontend_tasks": [
+        "TASK-025",
+        "TASK-026",
+        "TASK-028"
+      ],
+      "depends_on_waves": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    },
+    "6": {
+      "status": "pending",
+      "theme": "Learner dashboard experience",
+      "branch": "wave-6/learner-dashboard-experience",
+      "tasks": [
+        "TASK-027"
+      ],
+      "backend_tasks": [],
+      "frontend_tasks": [
+        "TASK-027"
+      ],
+      "depends_on_waves": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    },
+    "7": {
+      "status": "pending",
+      "theme": "Final application route assembly and integration checks",
+      "branch": "wave-7/final-application-route-assembly-and-integration-checks",
+      "tasks": [
+        "TASK-031"
+      ],
+      "backend_tasks": [
+        "TASK-031"
+      ],
+      "frontend_tasks": [],
+      "depends_on_waves": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pr_number": null,
+      "issue_number": null,
+      "completed_at": null
+    }
+  }
+}

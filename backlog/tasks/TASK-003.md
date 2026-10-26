@@ -7,6 +7,7 @@
 | **Status** | To Do |
 | **Assignee** | Unassigned |
 | **Estimate** | 6h |
+| **Wave**     | 2                 |
 | **Type / Agent** | Backend — `@4-develop-agent` |
 
 ## Description
